@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">おたすけ割り勘</string>
-    <string name="tv_num_of_participant">参加人数</string>
-    <string name="tv_amount_of_payment">支払額</string>
+    <string name="tv_num_of_participant">参加人数 : </string>
+    <string name="tv_amount_of_payment">支払額 : </string>
     <string name="tv_unit_of_num_of_participant">人</string>
     <string name="tv_unit_of_amount_of_payment">円</string>
     <string name="bt_calculate">計算する</string>

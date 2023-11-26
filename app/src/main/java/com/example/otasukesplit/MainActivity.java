@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+   //「計算する」ボタンのイベント処理
     public void onCalculateButtonClick(View view) {
         //トースト用メッセージ文字列を初期化
         String toastMessage = "";
