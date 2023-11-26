@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="45dp"
             android:layout_marginTop="10dp"
-            android:text="@string/tv_unit_of_amount_of_payment"
+            android:text="@string/tv_yen"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -101,7 +101,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
-            android:text="@string/tv_per_person"
             android:textSize="30sp"/>
 
         <TextView
@@ -121,7 +120,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginRight="45dp"
-            android:text="@string/tv_unit_of_amount_of_payment"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -137,7 +135,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="35dp"
-            android:text="@string/tv_how_much_is_the_surplus_amount"
             android:textSize="30sp"/>
 
         <TextView
@@ -155,7 +152,6 @@
             android:id="@+id/tvUnitOfSurplusAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_unit_of_amount_of_payment"
             android:layout_marginTop="10dp"
             android:layout_marginRight="45dp"
             android:textSize="30sp"/>

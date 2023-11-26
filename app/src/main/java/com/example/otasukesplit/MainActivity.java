@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-   //「計算する」ボタンのイベント処理
+   //「計算する」ボタンのイベントハンドラ
     public void onCalculateButtonClick(View view) {
         //トースト用メッセージ文字列を初期化
         String toastMessage = "";
@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
             //トーストの表示
             Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
 
+            //結果をクリア
+            ClearResult();
+
             //計算処理の終了
             return;
         }
@@ -72,11 +75,14 @@ public class MainActivity extends AppCompatActivity {
             //参加人数の入力値を削除
             etNumOfParticipant.getEditableText().clear();
 
+            //結果をクリア
+            ClearResult();
+
             //計算処理の終了
             return;
         }
 
-        //一人あたりの支払額を表示
+        //一人あたりの支払額を計算
         TextView tvAmountOfPaymentPerPerson =  findViewById(R.id.tvAmountOfPaymentPerPerson);
         int amountOfPaymentPerPerson = 0;
         //参加人数が0の場合の例外処理
@@ -85,12 +91,51 @@ public class MainActivity extends AppCompatActivity {
         } catch(ArithmeticException ex) {
             Log.e("MainActivity", "0で割っています", ex);
         }
-        tvAmountOfPaymentPerPerson.setText(String.valueOf(amountOfPaymentPerPerson));
 
-        //不足金額を表示
+        //不足金額をを計算
         TextView tvSurplusAmount = findViewById(R.id.tvSurplusAmount);
         int surplusAmount = amountOfPaymentPerPerson * numOfPartcipant - amountOfPayment;
+
+        //一人あたりの支払額を設定
+        TextView tvPerPerson = findViewById(R.id.tvPerPerson);
+        tvPerPerson.setText(getResources().getString(R.string.tv_per_person));
+
+        tvAmountOfPaymentPerPerson.setText(String.valueOf(amountOfPaymentPerPerson));
+
+        TextView tvUnitOfAmountOfPerPerson = findViewById(R.id.tvUnitOfAmountOfPaymentPerPerson);
+        tvUnitOfAmountOfPerPerson.setText(getResources().getString(R.string.tv_unit_of_num_of_participant));
+
+        //余剰額を設定
+        TextView tvHowMuchIsTheSurplusAmount = findViewById(R.id.tvHowMuchIsTheSurplusAmount);
+        tvHowMuchIsTheSurplusAmount.setText(R.string.tv_how_much_is_the_surplus_amount);
+
         tvSurplusAmount.setText(String.valueOf(surplusAmount));
 
+        TextView tvUnitOfSurplusAmount = findViewById(R.id.tvUnitOfSurplusAmount);
+        tvUnitOfSurplusAmount.setText(R.string.tv_yen);
+
     }
+
+    public void ClearResult() {
+        //一人あたりの支払額をクリア
+        TextView tvPerPerson = findViewById(R.id.tvPerPerson);
+        tvPerPerson.setText("");
+
+        TextView tvAmountOfPaymentPerPerson =  findViewById(R.id.tvAmountOfPaymentPerPerson);
+        tvAmountOfPaymentPerPerson.setText("");
+
+        TextView tvUnitOfAmountOfPerPerson = findViewById(R.id.tvUnitOfAmountOfPaymentPerPerson);
+        tvUnitOfAmountOfPerPerson.setText("");
+
+        //余剰額をクリア
+        TextView tvHowMuchIsTheSurplusAmount = findViewById(R.id.tvHowMuchIsTheSurplusAmount);
+        tvHowMuchIsTheSurplusAmount.setText("");
+
+        TextView tvSurplusAmount = findViewById(R.id.tvSurplusAmount);
+        tvSurplusAmount.setText("");
+
+        TextView tvUnitOfSurplusAmount = findViewById(R.id.tvUnitOfSurplusAmount);
+        tvUnitOfSurplusAmount.setText("");
+    }
+
 }
