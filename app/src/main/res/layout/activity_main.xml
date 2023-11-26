@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNumOfParticipant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_num_of_participant"/>
+
+        <EditText
+            android:id="@+id/etNumOfParticipant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tvUnitOfNumOfParticipant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_unit_of_num_of_participant"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAmountOfPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_amount_of_payment"/>
+
+        <EditText
+            android:id="@+id/etAmountOfPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tvUnitOfAmountOfPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_unit_of_amount_of_payment"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_calculate"
+        android:onClick="onCalculateButtonClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_per_person"/>
+
+        <TextView
+            android:id="@+id/tvAmountOfPaymentPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvUnitOfAmountOfPaymentPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_unit_of_amount_of_payment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvHowMuchIsTheSurplusAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_how_much_is_the_surplus_amount"/>
+
+        <TextView
+            android:id="@+id/tvSurplusAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvUnitOfSurplusAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_unit_of_amount_of_payment"/>
+
+    </LinearLayout>
+
+</LinearLayout>
