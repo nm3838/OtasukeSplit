@@ -1,46 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llInputData"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/fragmentInputData"
-        android:name="com.example.otasukesplit.InputDataFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tvPerPerson"
+            android:id="@+id/tvNumOfParticipant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_num_of_participant"
             android:textSize="30sp"/>
 
-        <TextView
-            android:id="@+id/tvAmountOfPaymentPerPerson"
+        <EditText
+            android:id="@+id/etNumOfParticipant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:gravity="right"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:inputType="number"/>
 
         <TextView
-            android:id="@+id/tvUnitOfAmountOfPaymentPerPerson"
+            android:id="@+id/tvUnitOfNumOfParticipant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginRight="45dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_unit_of_num_of_participant"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -51,32 +49,46 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tvHowMuchIsTheSurplusAmount"
+            android:id="@+id/tvAmountOfPayment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tv_amount_of_payment"
             android:textSize="30sp"/>
 
-        <TextView
-            android:id="@+id/tvSurplusAmount"
+        <EditText
+            android:id="@+id/etAmountOfPayment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:gravity="right"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:inputType="number"/>
 
         <TextView
-            android:id="@+id/tvUnitOfSurplusAmount"
+            android:id="@+id/tvUnitOfAmountOfPayment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tv_yen"
             android:textSize="30sp"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20sp"
+        android:text="@string/bt_calculate"
+        android:textSize="25sp"
+        android:onClick="onCalculateButtonClick"/>
 
 </LinearLayout>
