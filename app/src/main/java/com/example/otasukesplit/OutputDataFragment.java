@@ -8,16 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 
-public class InputDataFragment extends Fragment {
+public class OutputDataFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //このフラグメントが所属するアクティビティオブジェクトを取得
-        Activity inputDataParentActivity = getActivity();
-        //フラグメントを表示する画面をXMLファイルからインフレートする
-        View view = inflater.inflate(R.layout.fragment_input_data, container, false);
+        Activity outputDataParentActivity = getActivity();
+        //フラグメントで表示する画面をXMLファイルからインフレートする
+        View view = inflater.inflate(R.layout.fragment_output_data, container, false);
 
         return view;
     }
