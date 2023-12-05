@@ -16,18 +16,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/tv_per_person"
             android:textSize="30sp"/>
 
         <TextView
             android:id="@+id/tvAmountOfPaymentPerPerson"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:gravity="right"
+            android:gravity="end"
             android:textSize="30sp"/>
 
         <TextView
@@ -35,7 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginRight="45dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/tv_yen"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -50,18 +52,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:text="@string/tv_how_much_is_the_surplus_amount"
             android:textSize="30sp"/>
 
         <TextView
             android:id="@+id/tvSurplusAmount"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:gravity="right"
+            android:gravity="end"
             android:textSize="30sp"/>
 
         <TextView
@@ -69,7 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="45dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/tv_yen"
             android:textSize="30sp"/>
 
     </LinearLayout>

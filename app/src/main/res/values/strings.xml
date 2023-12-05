@@ -12,10 +12,4 @@
     <string name="do_not_accept_zero_dialog_msg">参加人数に0を入力しないでください。</string>
     <string name="do_not_accept_zero_dialog_btn_close">閉じる</string>
 
-    <string name="main_activity_num_of_participant_not_entered_toast_msg">参加人数</string>
-    <string name="main_activity_amount_of_payment_not_entered_toast_msg">支払額</string>
-    <string name="main_activity_and_toast_msg">と</string>
-    <string name="main_activity_not_entered_toast_msg">が未入力です。</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

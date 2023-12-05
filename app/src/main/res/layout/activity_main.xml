@@ -9,12 +9,13 @@
         android:id="@+id/fragmentInputData"
         android:name="com.example.otasukesplit.InputDataFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
 
-    <fragment
-        android:id="@+id/fragmentOutputData"
-        android:name="com.example.otasukesplit.OutputDataFragment"
+    <FrameLayout
+        android:id="@+id/outputDataFrame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
 
 </LinearLayout>
